@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Upload</title>
+</head>
+<body>
+	<center>
+		<h1>Register Your Profile Here.</h1>
+		<form method="post" enctype="multipart/form-data">
+			{{form.as_p}}
+			{% csrf_token %}
+			<button type="submit">upload</button>
+		</form>
+	</center>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Show</title>
+</head>
+<body>
+	<center>
+		{% for profile in profiles %}
+		<div>
+			{{profile.Name}}
+		</div>
+		<div>
+			<img src="{{profile.Image.url}}">
+		</div>
+		{% endfor %}
+	</center>
+</body>
+</html>
